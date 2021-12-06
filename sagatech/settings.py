@@ -94,7 +94,7 @@ else:
         'default': {
             'ENGINE': 'django.db.backends.postgresql_psycopg2',
             'NAME': 'sagatechwebpage',
-            'USER': 'mrdrive',
+            'USER': 'mrdrivedb',
             'PASSWORD': 'mrdrive271',
             'HOST': 'localhost',
             'PORT': '',
