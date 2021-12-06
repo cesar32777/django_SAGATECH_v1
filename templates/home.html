@@ -40,17 +40,17 @@
     <h1>Nuestras sucursales</h1>
     <!--<p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>-->
     <div class="row">
-        {% for branchoffice in branchoffices %}
+        <!--{% for branchoffice in branchoffices %}-->
         <div class="locations-col">
             <a href="{{branchoffice.get_url}}"><img src="{{branchoffice.images.url}}"></a>
             <div class="layer">
                 <a href="/contact/">
-                    <h3>{{branchoffice.branch_office_name}}</h3>
-                    <p>{{branchoffice.branch_office_address}}</p>
+                    <h3>Sucursal San Nicolás<!--{{branchoffice.branch_office_name}}--></h3>
+                    <p>Calle Los Nogales 400, Col Los Nogales<!--{{branchoffice.branch_office_address}}--></p>
                 </a>
             </div>
         </div> 
-        {% endfor %} 
+        <!--{% endfor %}-->
     </div>
 </section>
 <!-------servicios------>
