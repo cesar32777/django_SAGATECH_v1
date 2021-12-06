@@ -93,7 +93,7 @@ else:
     DATABASES = {
         'default': {
             'ENGINE': 'django.db.backends.postgresql_psycopg2',
-            'NAME': 'sagatechwebpage',
+            'NAME': 'sagatech',
             'USER': 'mrdrivedb',
             'PASSWORD': 'mrdrive271',
             'HOST': 'localhost',
