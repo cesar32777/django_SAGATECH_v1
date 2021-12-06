@@ -42,7 +42,8 @@
     <div class="row">
         <!--{% for branchoffice in branchoffices %}-->
         <div class="locations-col">
-            <a href="{{branchoffice.get_url}}"><img src="{{branchoffice.images.url}}"></a>
+            <!--<a href="{{branchoffice.get_url}}"><img src="{{branchoffice.images.url}}"></a>-->
+            <img src="{% static 'images/san_nicolas.jpg' %}">
             <div class="layer">
                 <a href="/contact/">
                     <h3>Sucursal San Nicolás<!--{{branchoffice.branch_office_name}}--></h3>
