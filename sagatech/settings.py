@@ -96,7 +96,7 @@ else:
             'NAME': 'sagatechwebpage',
             'USER': 'mrdrive',
             'PASSWORD': 'mrdrive271',
-            'HOST': 'sagatech.com.mx',
+            'HOST': 'localhost',
             'PORT': '',
         }
     }
