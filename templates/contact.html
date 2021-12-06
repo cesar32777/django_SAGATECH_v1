@@ -1,0 +1,197 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="with=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="{% static 'css/style.css' %}">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Urbanist:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        
+        <title>Acerca de</title>
+    </head>
+    <body>
+        <nav>
+            <div class="logo"><a href="/inicio/"><img src="{% static 'images/saga.png' %}"></a></div>
+            
+            <label for="btn" class="icon">
+            <span class="fa fa-bars"></span>
+            </label>
+            <input class="inputxd" type="checkbox" id="btn">
+            <ul class="centered">
+                <li><a href="/inicio/">Inicio</a></li>
+                <li>
+                    <label for="btn-2" class="show">Soluciones +</label>
+                    <a href="#">Soluciones</a>
+                    <input class="inputxd" type="checkbox" id="btn-2">
+                    <ul>
+                        <li>
+                            <label for="btn-2" class="show">Informatica +</label>
+                            <a href="#">Informatica</a>
+                            <input class="inputxd" type="checkbox" id="btn-2">
+                            <ul>
+                                <li>
+                                    <label for="btn-3" class="show">Mantenimiento regular</label>
+                                    <a href="/mantenimiento_regular/" class="small">Mantenimiento regular</a>
+                                    <input class="inputxd" type="checkbox" id="btn-3">
+                                </li>
+                                <li>
+                                    <label for="btn-4" class="show">Servicio a negocios</label>
+                                    <a href="/servicio_a_negocios/" class="small">Servicio a negocios</a>
+                                    <input class="inputxd" type="checkbox" id="btn-4">
+                                </li>
+        
+                                <li>
+                                    <label for="btn-5" class="show">Reparación</label>
+                                    <a href="/reparacion/">Reparación</a>
+                                    <input class="inputxd" type="checkbox" id="btn-5">
+                                </li>
+        
+                                <li>
+                                    <label for="btn-6" class="show">Instalación de software</label>
+                                    <a href="/software/" class="small">Instalación de software</a>
+                                    <input class="inputxd" type="checkbox" id="btn-6">
+                                </li>
+        
+                                <li>
+                                    <label for="btn-7" class="show">Mejoras y ampliaciones</label>
+                                    <a href="/mejoras/" class="small">Mejoras y ampliaciones</a>
+                                    <input class="inputxd" type="checkbox" id="btn-7">
+                                </li>
+                            </ul>         
+                        </li>
+
+                        <!--<li>
+                            <label for="btn-2" class="show">Refrigeración +</label>
+                            <a href="#">Refrigeración</a>
+                            <input class="inputxd" type="checkbox" id="btn-2">
+                            <ul>
+                                <li>
+                                    <label for="btn-8" class="show">Mantenimiento correctivo</label>
+                                    <a href="/mantenimiento_correctivo/" class="small">Mantenimiento correctivo</a>
+                                    <input class="inputxd" type="checkbox" id="btn-3">
+                                </li>
+                                <li>
+                                    <label for="btn-9" class="show">Mantenimiento preventivo</label>
+                                    <a href="/mantenimiento_preventivo/" class="small">Mantenimiento preventivo</a>
+                                    <input class="inputxd" type="checkbox" id="btn-3">
+                                </li>
+                                <li>
+                                    <label for="btn-10" class="show">Instalación de minisplit</label>
+                                    <a href="/instalacion_de_minisplits/" class="small">Instalación de minisplit</a>
+                                    <input class="inputxd" type="checkbox" id="btn-3">
+                                </li>
+                            </ul>         
+                        </li>-->
+                    </ul>
+                </li>
+                <li><a href="/about/">Acerca de nosotros</a></li>
+                <li><a href="/contact/">Contacto</a></li>
+             </ul>
+        
+        </nav>
+        <section class="sub-header">
+            <h1>Contactanos</h1>
+        </section>
+
+        
+        <!--------Fin del header-------->
+
+        <section class="location">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d57505.46936650368!2d-100.29311225852827!3d25.734476445463187!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x866294958b6ef86f%3A0xe25cc49800a22c73!2sLos%20Nogales%20400%2C%20Los%20Nogales%2C%2066430%20San%20Nicol%C3%A1s%20de%20los%20Garza%2C%20N.L.!5e0!3m2!1ses-419!2smx!4v1631588678416!5m2!1ses-419!2smx" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </section>
+
+    
+        <section class="contact-us">
+            <div class="row">
+                <div class="contact-col">
+                    <div>
+                        <i class="fa fa-home"></i>
+                        <span>
+                            <h5>Los Nogales 400, Col Los Nogales</h5>
+                            <p>San Nicolás de los Garza, Nuevo León</p>
+                        </span>
+                    </div>
+                    <div>
+                        <i class="fa fa-phone"></i>
+                         <span>
+                            <h5>+52 813 041 3601</h5>
+                            <p>Lunes a viernes, 8AM a 10PM</p>
+                        </span>
+                    </div>
+                    <div>
+                        <i class="fa fa-envelope-o"></i>
+                         <span>
+                            <h5>sagatechsoluciones@gmail.com</h5>
+                            <p>Envianos tus dudas</p>
+                        </span>
+                    </div>
+                </div>
+                <div class="contact-col">
+                    {% if "valido" in request.GET %}
+                        <p>Gracias</p>
+                    {% endif %}
+                    <form action="" method="POST">
+                        {% csrf_token %}
+                        <label for="firstname">Nombre</label>
+                        {{miFormulario.nombre}}
+                        <!--<input value="" type="text" placeholder="Mi nombre" required>-->
+                        <label for="firstname">Email</label>
+                        {{miFormulario.email}}
+                        <!--<input type="email" placeholder="miemail@email.com" required>-->
+                        <label for="firstname">Asunto</label>
+                        {{miFormulario.asunto}}
+                        <!--<input type="text" placeholder="Servicio de Reparación" required>-->
+                        <label for="firstname">Mensaje</label>
+                        {{miFormulario.mensaje}}
+                        <!--<input type="text" placeholder="Requiero de una reparación para..." required>-->
+                        <button type="submit" class="hero-btn red-btn">Enviar mensaje</button>
+                    </form>
+                </div>
+                
+            </div>
+        </section>
+        <!--{{request.POST}}-->
+   
+
+        <!--<section class="section-contact">
+            <div class="my-new-container">
+                <h1>Contactanos</h1>
+                <p>dfuisdhsd</p>
+
+                <form>
+                    <div class="form-group">
+                        <label for="firstname">Primer nombre</label>
+                        <input type="text" name="lastname" id="lastname" required
+                        class="form-element" placeholder="Doe"/>
+                    </div>
+                </form>
+
+            </div>
+        </section>-->
+
+        <!--------Footer-------->
+
+        <section class="footer">
+            <!--<h4>Acerca de nosotros</h4>-->
+            <p>Todos los derechos reservados</p>
+            <div class="icons">
+                <a href="https://www.facebook.com/SAGA-Tech-112869659535080" rel="noopener noreferrer" target="_blank"><i class="fa fa-facebook"></i></a>
+                <a href="https://wa.me/528130413601" rel="noopener noreferrer" target="_blank"><i class="fa fa-whatsapp"></i></a>
+            </div>
+        </section>
+
+        <!--------JavaScript para activar el menu de inicio en dispositivos moviles-------->
+        <script>
+            var navLinks = document.getElementById("navLinks");
+
+            function showMenu(){
+                navLinks.style.right="0";
+            }
+            function hideMenu(){
+                navLinks.style.right="-200px";
+            }
+        </script>
+    </body>
+</html>

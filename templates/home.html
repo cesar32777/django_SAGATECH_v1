@@ -1,0 +1,186 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+
+<!--
+<section class="header">
+    <nav>
+        <div class="text-box">
+            <h1>Tu mejor opción en mantenimiento informático</h1>
+            <a href="" class="hero-btn">Contrátanos</a>
+        </div>
+    </nav>
+</section>
+-->
+
+<div class="wrapper">
+
+    <div class="side left">
+          <div class="image dog"></div>
+          <div class="caption">
+                <h1>Soluciones en <br> informatica</h1>
+                <a class="button" href="/soluciones-en-informatica/">Ver</a>
+          </div>
+    </div>
+
+    <div class="side right">
+          <div class="image cat"></div>
+          <div class="caption">
+                <h1>Soluciones en <br> refrigeración</h1>
+                <a class="button" href="#">Proximamente</a>
+          </div>
+    </div>
+</div>
+
+<div id="Library"></div>
+<!------sucursales------>
+
+<section class="locations">
+    
+    <h1>Nuestras sucursales</h1>
+    <!--<p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>-->
+    <div class="row">
+        {% for branchoffice in branchoffices %}
+        <div class="locations-col">
+            <a href="{{branchoffice.get_url}}"><img src="{{branchoffice.images.url}}"></a>
+            <div class="layer">
+                <a href="/contact/">
+                    <h3>{{branchoffice.branch_office_name}}</h3>
+                    <p>{{branchoffice.branch_office_address}}</p>
+                </a>
+            </div>
+        </div> 
+        {% endfor %} 
+    </div>
+</section>
+<!-------servicios------>
+
+<section class="services">
+    <h1>Areas de solución que ofrecemos</h1>
+    <p>En SAGA Tech proporcionamos servicios de calidad tecnica profesional,
+    en distintas areas tecnologicas.
+    </p>
+    <!--
+    <body>
+        <div class="container">
+            <main class="grid"> 
+            {% for category in links %}
+                <article>
+                    <img src="{{category.cat_image.url}}">
+                    <div class="text">
+                        <h3>{{category.category_name}}</h3>
+                        <p>{{category.description}}</p>
+                        <a href="/services/mantenimiento" class="hero-btn red-btn">Me interesa</a>
+                    </div>
+                </article> 
+            {% endfor %}
+            </main>  
+        </div> 
+    </body>
+    -->
+    <body>
+        <div class="cards">
+            <div class="servicesc">
+                <div class="contentc contentc-1">
+                    <div class="fa fa-cog"></div>
+                    <h2>
+                        Soluciones en informatica
+                    </h2>
+                    <p>
+                        Ofrecemos soluciones para todo tipo de dispositivos mobiles,
+                        de computo y entretenimiento.
+                    </p>
+                    <a href="/soluciones-en-informatica/">Ver más</a>
+                </div>
+                <!--<div class="contentc contentc-1">
+                    <div class="fa fa-briefcase"></div>
+                    <h2>
+                        Soluciones en refrigeración
+                    </h2>
+                    <p>
+                        Ofrecemos soluciones para equipo de aire acondicionado comercial
+                        y de particular.
+                    </p>
+                    <a href="#">Ver más</a>
+                </div>-->
+           </div>
+        </div>
+    </body>
+
+    
+
+
+</section>
+
+
+<!--------Instalaciones-------->
+
+<!--
+<section class="facilities">
+    <h1>Nuestras instalaciones</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+    <div class="row">
+        <div class="facilities-col">
+            <img src="{% static 'images/library.png' %}">
+            <h3>Espacio especial dedicado a mantenimiento</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        </div>
+        <div class="facilities-col">
+            <img src="{% static 'images/basketball.png' %}">
+            <h3>Herramientas que tus equipos necesitan</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        </div>
+        <div class="facilities-col">
+            <img src="{% static 'images/cafeteria.png' %}">
+            <h3>Productos de limpieza para tus equipos</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        </div>
+    </div>
+</section>
+-->
+
+<!--------Opiniones-------->
+
+<!--
+<section class="opinions">
+    <h1>Lo que nuestros clientes opinan</h3>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+    <div class="row">
+        <div class="opinions-col">
+            <img src="{% static 'images/user1.jpg' %}">
+            <div>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                <h3>María Diaz</h3>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star-o"></i>
+            </div>
+        </div>
+        <div class="opinions-col">
+            <img src="{% static 'images/user2.jpg' %}">
+            <div>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                <h3>Pedro Gutierrez</h3>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star-half-o"></i>
+            </div>
+        </div>
+
+    </div>
+</section>
+-->
+
+<!--------Llamar a accion-------->
+
+<section class="cta">
+    <h1>Acude a nuestras soluciones con precios justos y <br> economicos para que los equipos de tu negocio esten en buen estado</h1>
+    <a href="/contact/" class="hero-btn">Contactanos</a>
+</section>
+
+
+{% endblock %}

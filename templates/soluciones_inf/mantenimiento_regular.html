@@ -1,0 +1,172 @@
+{% extends 'base_inf.html' %}
+{% load static %}
+{% block content %}
+
+
+<!--
+<div class="wrapper">
+
+    <div class="side left">
+          <div class="image dog"></div>
+          <div class="captionsmall">
+                <h1>Visita tambien nuestras<br>soluciones en<br>refrigeración</h1>
+                <a class="button" href="/soluciones-en-informatica/">Ver</a>
+          </div>
+    </div>
+
+</div>
+-->
+<!------sucursales------>
+
+<!-------servicios------>
+
+<section class="services">
+    <h1>Soluciones en mantenimiento regular</h1>
+    <p>Mantenimiento preventivo regular y limpieza completa de tu equipo, 
+        lo mejor para aprovechar y hacer durar tus equipos al máximo</p>
+    <!--
+    <body>
+        <div class="container">
+            <main class="grid"> 
+            {% for category in links %}
+                <article>
+                    <img src="{{category.cat_image.url}}">
+                    <div class="text">
+                        <h3>{{category.category_name}}</h3>
+                        <p>{{category.description}}</p>
+                        <a href="/services/mantenimiento" class="hero-btn red-btn">Me interesa</a>
+                    </div>
+                </article> 
+            {% endfor %}
+            </main>  
+        </div> 
+    </body>
+    -->
+</section>
+
+<section>
+    <body>
+        <div class="cards">
+            <div class="servicesc">
+                <div class="contentc contentc-1">
+                    <div class="fa fa-laptop"></div>
+                    <h2>
+                        Laptop
+                    </h2>
+                    <p>
+                        Mantenimiento preventivo, limpieza y cambio de pasta
+                         térmica en equipos portátiles.
+     
+                    </p>
+                    <a href="https://wa.me/528130413601" rel="noopener noreferrer" target="_blank">Cotizar</a>
+                </div>
+                <div class="contentc contentc-1">
+                    <div class="fa fa-desktop"></div>
+                    <h2>
+                        Desktop
+                    </h2>
+                    <p>
+                        Mantenimiento preventivo, limpieza y cambio de 
+                        pasta térmica en equipos de escritorio.
+                    </p>
+                    <a href="https://wa.me/528130413601" rel="noopener noreferrer" target="_blank">Cotizar</a>
+                </div>
+                <div class="contentc contentc-1">
+                    <div class="fa fa-gamepad"></div>
+                    <h2>
+                        Consolas
+                    </h2>
+                    <p>
+                        Mantenimiento preventivo, limpieza y cambio de 
+                        pasta térmica en consolas de videojuegos (PlayStation, Xbox, Nintendo, etc)
+                    </p>
+                    <a href="https://wa.me/528130413601" rel="noopener noreferrer" target="_blank">Cotizar</a>
+                </div>
+           </div>
+           <div class="servicesc">
+                <div class="contentc contentc-1">
+                    <div class="fa fa-mobile"></div>
+                    <h2>
+                        Smartphone
+                    </h2>
+                    <p>
+                        Mantenimiento preventivo, cambio de micas protectoras y limpieza de suciedad en puertos y altavoces.
+                    </p>
+                    <a href="https://wa.me/528130413601" rel="noopener noreferrer" target="_blank">Cotizar</a>
+                </div>
+           </div>
+        </div>
+    </body>
+</section>
+
+<!--------Instalaciones-------->
+
+<!--
+<section class="facilities">
+    <h1>Nuestras instalaciones</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+    <div class="row">
+        <div class="facilities-col">
+            <img src="{% static 'images/library.png' %}">
+            <h3>Espacio especial dedicado a mantenimiento</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        </div>
+        <div class="facilities-col">
+            <img src="{% static 'images/basketball.png' %}">
+            <h3>Herramientas que tus equipos necesitan</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        </div>
+        <div class="facilities-col">
+            <img src="{% static 'images/cafeteria.png' %}">
+            <h3>Productos de limpieza para tus equipos</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        </div>
+    </div>
+</section>
+-->
+
+<!--------Opiniones-------->
+
+<!--
+<section class="opinions">
+    <h1>Lo que nuestros clientes opinan</h3>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+    <div class="row">
+        <div class="opinions-col">
+            <img src="{% static 'images/user1.jpg' %}">
+            <div>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                <h3>María Diaz</h3>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star-o"></i>
+            </div>
+        </div>
+        <div class="opinions-col">
+            <img src="{% static 'images/user2.jpg' %}">
+            <div>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                <h3>Pedro Gutierrez</h3>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star-half-o"></i>
+            </div>
+        </div>
+
+    </div>
+</section>
+-->
+
+<!--------Llamar a accion-------->
+
+<section class="cta">
+    <h1>Acude a nuestras soluciones con precios justos y <br> economicos para que los equipos de tu negocio esten en buen estado</h1>
+    <a href="/contact/" class="hero-btn">Contactanos</a>
+</section>
+
+
+{% endblock %}

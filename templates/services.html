@@ -1,0 +1,118 @@
+
+{% load static %}
+{% block content %}
+
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="with=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="{% static 'css/style.css' %}">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Urbanist:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        
+        <title>Servicios</title>
+    </head>
+    <body>
+        <section class="sub-header">
+            <nav>
+                <a href="/home/"><img src="{% static 'images/saga.png' %}"></a>
+                <div class="nav-links" id="navLinks">
+                    <i class="fa fa-times" onclick="hideMenu()"></i>
+                    <ul>
+                        <li><a href="/home">Inicio</a></li>
+                        <li><a href="/about">Acerca de nosotros</a></li>
+                        <li><a href="/services">Servicios</a></li>
+                        <li><a href="/contact">Contacto</a></li>
+                    </ul>
+                </div>
+                <i class="fa fa-bars" onclick="showMenu()"></i>
+            </nav>
+            <h1>Nuestras soluciones</h1>
+        </section>
+
+        
+        <!--------Fin del header-------->
+
+        <section class="services">
+            <div class="row">
+                {% for category in categories %}
+                <div class="services-col"> 
+                    <h3>{{category.category_name}}</h3>
+                    <p>{{service.service_description}}</p>
+                    {% if service.price > 0 %}
+                        <p>{{service.price}}</p>
+                    {% endif %}
+                </div>
+                {% endfor %}
+                
+            </div>
+        </section>
+
+        
+
+
+        <section class="services">
+            <h1>Soluciones que ofrecemos</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia,
+                molestiae quas vel sint commodi repudiandae consequuntur voluptatum laborum
+                numquam blanditiis harum quisquam eius sed odit fugiat iusto fuga praesentium
+                optio, eaque rerum! Provident similique accusantium nemo autem.</p>
+            
+            <!--
+            <body>
+                <div class="container">
+                    <main class="grid"> 
+                    {% for service in services %}
+                        <article>
+                            <img src="{{service.images.url}}">
+                            <div class="text">
+                                <h3>{{service.service_name}}</h3>
+                                <p>{{service.service_description}} ${{service.price}}</p>
+                                <a href="/services" class="hero-btn red-btn">Me interesa</a>
+                            </div>
+                        </article> 
+                    {% endfor %}
+                    </main> 
+                </div>
+            </body>
+            -->
+        
+        </section>
+
+
+        <!--------Footer-------->
+
+        <section class="footer">
+            <h4>Acerca de nosotros</h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia,
+                molestiae quas vel sint commodi repudiandae consequuntur voluptatum laborum
+                numquam blanditiis harum quisquam eius sed odit fugiat iusto fuga praesentium
+                optio, eaque rerum! Provident similique accusantium nemo autem.</p>
+            <div class="icons">
+                <i class="fa fa-facebook"></i>
+                <i class="fa fa-twitter"></i>
+                <i class="fa fa-instagram"></i>
+                <i class="fa fa-whatsapp"></i>
+                <i class="fa fa-telegram"></i>
+                <i class="fa fa-linkedin"></i>
+            </div>
+        </section>
+
+        <!--------JavaScript para activar el menu de inicio en dispositivos moviles-------->
+        <script>
+            var navLinks = document.getElementById("navLinks");
+
+            function showMenu(){
+                navLinks.style.right="0";
+            }
+            function hideMenu(){
+                navLinks.style.right="-200px";
+            }
+        </script>
+    </body>
+</html>
+
+{% endblock %}

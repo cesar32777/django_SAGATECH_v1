@@ -1,0 +1,119 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="with=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="{% static 'css/style.css' %}">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Urbanist:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        
+        <title>Blog</title>
+    </head>
+    <body>
+        <section class="sub-header">
+            <nav>
+                <a href="/home/"><img src="{% static 'images/saga.png' %}"></a>
+                <div class="nav-links" id="navLinks">
+                    <i class="fa fa-times" onclick="hideMenu()"></i>
+                    <ul>
+                        <li><a href="">Inicio</a></li>
+                        <li><a href="">Acerca de nosotros</a></li>
+                        <li><a href="">Servicios</a></li>
+                        <li><a href="">Blog</a></li>
+                        <li><a href="">Contacto</a></li>
+                    </ul>
+                </div>
+                <i class="fa fa-bars" onclick="showMenu()"></i>
+            </nav>
+            <h1>Blog</h1>
+        </section>
+
+        
+        <!--------Fin del header-------->
+
+        <section class="blog-content">
+            <div class="row">
+                <div class="blog-left">
+                    <img src="../images/certificate.jpg">
+                    <h2>Sabias q un iphone te puede matar de la radiacion? OMG</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia,
+                        molestiae quas vel sint commodi repudiandae consequuntur voluptatum laborum
+                        numquam blanditiis harum quisquam eius sed odit fugiat iusto fuga praesentium
+                        optio, eaque rerum! Provident similique accusantium nemo autem.</p>
+                    <br>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia,
+                        molestiae quas vel sint commodi repudiandae consequuntur voluptatum laborum
+                        numquam blanditiis harum quisquam eius sed odit fugiat iusto fuga praesentium
+                        optio, eaque rerum! Provident similique accusantium nemo autem.</p>
+                    <br>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia,
+                        molestiae quas vel sint commodi repudiandae consequuntur voluptatum laborum
+                        numquam blanditiis harum quisquam eius sed odit fugiat iusto fuga praesentium
+                        optio, eaque rerum! Provident similique accusantium nemo autem.</p>
+                    <br>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia,
+                        molestiae quas vel sint commodi repudiandae consequuntur voluptatum laborum
+                        numquam blanditiis harum quisquam eius sed odit fugiat iusto fuga praesentium
+                        optio, eaque rerum! Provident similique accusantium nemo autem.</p>
+
+                    <div class="comment-box">
+                        <h3>Deja un comentario</h3>
+                        <form class="comment-form">
+                            <input type="text" placeholder="Ingresa tu nombre">
+                            <input type="text" placeholder="Ingresa tu email">
+                            <textarea rows="5" placeholder="Tu comentario"></textarea>
+                            <button type="submit" class="hero-btn red-btn">Publicar comentario</button>
+                        </form>
+                    </div>
+                </div>
+                <div class="blog-right">
+                    <h3>Categorias</h3>
+                    <div>
+                        <span>Modelos de telefonos</span>
+                        <span>21</span>
+                    </div>
+                    <div>
+                        <span>Teclados mas faciles de reparar</span>
+                        <span>28</span>
+                    </div>
+                    <div>
+                        <span>Cuidado de equipos moviles</span>
+                        <span>15</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--------Footer-------->
+
+        <section class="footer">
+            <h4>Acerca de nosotros</h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia,
+                molestiae quas vel sint commodi repudiandae consequuntur voluptatum laborum
+                numquam blanditiis harum quisquam eius sed odit fugiat iusto fuga praesentium
+                optio, eaque rerum! Provident similique accusantium nemo autem.</p>
+            <div class="icons">
+                <i class="fa fa-facebook"></i>
+                <i class="fa fa-twitter"></i>
+                <i class="fa fa-instagram"></i>
+                <i class="fa fa-whatsapp"></i>
+                <i class="fa fa-telegram"></i>
+                <i class="fa fa-linkedin"></i>
+            </div>
+        </section>
+
+        <!--------JavaScript para activar el menu de inicio en dispositivos moviles-------->
+        <script>
+            var navLinks = document.getElementById("navLinks");
+
+            function showMenu(){
+                navLinks.style.right="0";
+            }
+            function hideMenu(){
+                navLinks.style.right="-200px";
+            }
+        </script>
+    </body>
+</html>

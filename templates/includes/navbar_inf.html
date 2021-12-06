@@ -1,0 +1,98 @@
+{% load static %}
+<!-------Inicio del header------->
+<body>
+   
+        <nav>
+            
+            <!--
+            <div class="menu-bar">
+                <i class="fa fa-bars" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="/home/">Inicio</a></li>
+                    <li><a href="/about/">Acerca de nosotros</a></li>
+                    <li><a href="#">Soluciones</a>
+                        <div class="sub-menu-1">
+                            <ul>
+                                <li class="hover-me"><a href="">Mantenimiento regular</a><i class="fa fa-angle-right"></i>
+                                <div class="sub-menu-2">
+                                    <ul>
+                                        <li>Consolas</li>
+                                        <li>Laptops</li>
+                                        <li>Desktop</li>
+                                    </ul>
+                                </div>
+                                </li>
+                                <li class="hover-me"><a href="">Reparacion</a>
+                                    <div class="sub-menu-2">
+                                        <ul>
+                                            <li>Placas</li>
+                                            <li>Celulares</li>
+                                            <li>Controles</li>
+                                        </ul>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li><a href="/contact/">Contacto</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        -->
+            <div class="logo"><a href="/inicio/"><img src="{% static 'images/saga.png' %}"></a></div>
+            
+            <label for="btn" class="icon">
+            <span class="fa fa-bars"></span>
+            </label>
+            <input class="inputxd" type="checkbox" id="btn">
+            <ul class="centered">
+                <li><a href="/soluciones-en-informatica/">Inicio</a></li>
+                <li>
+                    <label for="btn-2" class="show">Soluciones +</label>
+                    <a href="#">Soluciones</a>
+                    <input class="inputxd" type="checkbox" id="btn-2">
+                    <ul>
+                        <li>
+                            <!--<label for="btn-3" class="show">Mantenimiento regular</label>-->
+                            <a href="/mantenimiento_regular/" class="small">Mantenimiento regular</a>
+                            <!--<input class="inputxd" type="checkbox" id="btn-3">-->
+                        </li>
+
+                        <li>
+                            <a href="/servicio_a_negocios/" class="small">Servicio a negocios</a>
+                        </li>
+
+                        <li>
+                            <a href="/reparacion/" class="small">Reparación</a>
+                        </li>
+
+                        <li>
+                            <a href="/software/" class="small">Instalación de software</a>
+                        </li>
+
+                        <li>
+                            <a href="/mejoras/" class="small">Mejoras y ampliaciones</a>
+                        </li>
+
+                        <li>
+                            <a href="/armamos_tu_pc/" class="small">Armamos tu PC</a>
+                        </li>
+                    </ul>
+                </li>
+                <li><a href="/about/">Acerca de nosotros</a></li>
+                <li><a href="/contact/">Contacto</a></li>
+             </ul>
+        
+        </nav>
+        
+        <script>
+        $('.icon').click(function(){
+            $('span').toggleClass("cancel");
+        });
+        </script>
+
+    
+</body>
+
+
+<!--------Fin del header-------->

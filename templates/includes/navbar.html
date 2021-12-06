@@ -1,0 +1,89 @@
+{% load static %}
+<!-------Inicio del header------->
+
+<body>
+    <nav>
+        <div class="logo"><a href="/inicio/"><img src="{% static 'images/saga.png' %}"></a></div>
+        
+        <label for="btn" class="icon">
+        <span class="fa fa-bars"></span>
+        </label>
+        <input class="inputxd" type="checkbox" id="btn">
+        <ul class="centered">
+            <li><a href="/inicio/">Inicio</a></li>
+            <li>
+                <label for="btn-2" class="show">Soluciones +</label>
+                <a href="#">Soluciones</a>
+                <input class="inputxd" type="checkbox" id="btn-2">
+                <ul>
+                    <li>
+                        <label for="btn-3" class="show">Informatica +</label>
+                        <a href="#">Informatica</a>
+                        <input class="inputxd" type="checkbox" id="btn-3">
+                        <ul>
+                            <li>
+                                <!--<label for="btn-3" class="show">Mantenimiento regular</label>-->
+                                <a href="/mantenimiento_regular/" class="small">Mantenimiento regular</a>
+                                <!--<input class="inputxd" type="checkbox" id="btn-4">-->
+                            </li>
+                            <li>
+                                <a href="/servicio_a_negocios/" class="small">Servicio a negocios</a>
+                            </li>
+    
+                            <li>
+                                <a href="/reparacion/">Reparación</a>
+                            </li>
+    
+                            <li>
+                                <a href="/software/" class="small">Instalación de software</a>
+                            </li>
+    
+                            <li>
+                                <a href="/mejoras/" class="small">Mejoras y ampliaciones</a>
+                            </li>
+
+                            <li>
+                                <a href="/armamos_tu_pc/" class="small">Armamos tu PC</a>
+                            </li>
+                        </ul>         
+                    </li>
+
+                    <!--<li>
+                        <label for="btn-2" class="show">Refrigeración +</label>
+                        <a href="#">Refrigeración</a>
+                        <input class="inputxd" type="checkbox" id="btn-2">
+                        <ul>
+                            <li>
+                                <label for="btn-8" class="show">Mantenimiento correctivo</label>
+                                <a href="/mantenimiento_correctivo/" class="small">Mantenimiento correctivo</a>
+                                <input class="inputxd" type="checkbox" id="btn-3">
+                            </li>
+                            <li>
+                                <label for="btn-9" class="show">Mantenimiento preventivo</label>
+                                <a href="/mantenimiento_preventivo/" class="small">Mantenimiento preventivo</a>
+                                <input class="inputxd" type="checkbox" id="btn-3">
+                            </li>
+                            <li>
+                                <label for="btn-10" class="show">Instalación de minisplit</label>
+                                <a href="/instalacion_de_minisplits/" class="small">Instalación de minisplit</a>
+                                <input class="inputxd" type="checkbox" id="btn-3">
+                            </li>
+                        </ul>         
+                    </li>-->
+                </ul>
+            </li>
+            <li><a href="/about/">Acerca de nosotros</a></li>
+            <li><a href="/contact/">Contacto</a></li>
+         </ul>
+    
+    </nav>
+           
+    <script>
+    $('.icon').click(function(){
+        $('span').toggleClass("cancel");
+    });
+    </script>
+</body>
+
+
+<!--------Fin del header-------->
