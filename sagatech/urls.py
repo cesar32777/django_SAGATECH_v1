@@ -22,7 +22,7 @@ from sagatech import settings
 
 urlpatterns = [
     path('admin/', admin.site.urls), 
-    path('^', views.home, name="home"),#inicio/
+    path('', views.home, name="home"),#inicio/
     path('soluciones-en-informatica/', views.soluciones_informatica_home, name="soluciones_informatica_home"),
     path('mantenimiento_regular/', views.inf_mant, name="inf_mant"),
     path('servicio_a_negocios/', views.inf_servneg, name="inf_servneg"),
